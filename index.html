@@ -1,89 +1,133 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="style.css">
-      <script src="https://kit.fontawesome.com/2cb0c91dfc.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-     <img id="royal" src="img/royal.png" alt="">
-      <div class="container-fluid">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>    Home | The Royal Group of Cambodia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2cb0c91dfc.js" crossorigin="anonymous"></script>
 
-            <div class="row">
-                  <div class="col-4 col-md-2 box1">1</div>
-                  <div class="col-4 col-md-2 box2">2</div>
-                  <div class="col-4 col-md-2 box3">3</div>
-                  <div class="col-4 col-md-2 box4">4</div>
-                  <div class="col-4 col-md-2 box5">5</div>
-                  <div class="col-4 col-md-2 box6">6</div>
+  </head>
+
+  <body>
+    <header>
+        <div class="logo">
+          <a href="index.html"><img src="img/rgc.png" alt="The Royal Group of Cambodia Logo"></a>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Who We Are <i class="fa-solid fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="sub-page/about-rgc.html">About Royal Group</a></li>
+                        <li><a href="sub-page/chairman.html">The Chairman</a></li>
+                        <li><a href="sub-page/milestones.html">Milestones</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">Business Portfolio</a></li>
+                <li><a href="services.html">Investors</a></li>
+                <li>
+                    <a href="contact.html">Content Hub <i class="fa-solid fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="history.html">About Royal Group</a></li>
+                        <li><a href="mission.html">The Chairman</a></li>
+                        <li><a href="leadership.html">Milestones</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Contact Us</a></li>
+                <li id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Complete Section Header -->
+    <main>
+        <section class="banner">
+            <img src="img/banner/image2.png" alt="">
+            <div class="explore">
+              <p id="explore">Explore Cambodia with The Royal Group</p>
+              <a href="sub-page/chairman.html" id="my-btn">Explore More <i class="fa-solid fa-arrow-right" style="color:black"></i> </i></a>
             </div>
-      </div>
-  </header>
+        </section>
 
-</div>
-      <div>
-        <img id="back1" src="img/image.png" alt="">
-      </div>
-      <div class="about">
-        <h1>about us</h1>
-      </div>
-      <div>
-        <h1>Our Operating Companies</h1>
-        <div class="company-group">
-          <img class="back2" src="img/cellcard.png" alt="">
-        </div>
-        <div>
-          <img class="back2" src="img/wing.png" alt="Na">
-        </div>
-        <div>
-          <img class="back2" src="img/infinity.png" alt="fdf">
-        </div>
-      </div>
+        <section class="about-rgc">
+            <div class="vdo">
+                <iframe id="vdo"  src="https://www.youtube.com/embed/7IMbuynIHq4?si=y2Lcc0nawbeoRjpX" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="about-text">
+                <p id="about-p">About the Royal Group of Companies</p>
+                <p id="describe-rgc">Cambodia’s strategic investment holding company, the Royal Group is recognised as the country’s most dynamic and diversified business conglomerate. Explore the overwhelming investment potential in the Mekong Region of Asia with us.</p>
+                <a href="sub-page/chairman.html" id="my-btn">Learn More <i class="fa-solid fa-arrow-right" style="color:black"></i> </i></a>
+            </div>
+        </section>
 
-      <div class="news">
-        <div class="latest">
-          <h1>Latest News</h1>
-        </div>
-        <div>
-          <div class="box-new">
-            <img src="img/news.png" alt="news1">
+
+        <section class="company">
+          <div class="com-title">
+            <p>Our Operating Companies</p>
           </div>
-          <div class="box-new">
-            <img src="img/new.png" alt="news2">
+          <div class="logo">
+            <img class="comp" src="img/company/cellcard.png" alt="">
+            <img class="comp" src="img/company/cellcard.png" alt="">
+            <img class="comp" src="img/company/cellcard.png" alt="">
+            <img class="comp" src="img/company/cellcard.png" alt="">
+            <img class="comp" src="img/company/cellcard.png" alt="">
+            <img class="comp" src="img/company/cellcard.png" alt="">
+            <img class="comp" src="img/company/cellcard.png" alt="">
+            <img class="comp" src="img/company/cellcard.png" alt="">
+            <img class="comp" src="img/company/cellcard.png" alt="">
           </div>
-        </div>
-      </div>
+        </section>
 
 
 
-  <main>
-    <h1>hell</h1>
-  </main>
+        <section class="news">
+          <div class="news-title">
+            <div class="title-grid">
+              <p>Latest News</p>
+            </div>
+            <div class="title-grid">
+              <a href="sub-page/chairman.html" id="my-btn">View More <i class="fa-solid fa-arrow-right" style="color:black"></i> </i></a>
+            </div>
+          </div>
+
+          <div class="news-img">
+            <div class="img-txt">
+              <img src="img/news/new2.png" alt="">
+              <i class="fa-brands fa-facebook-f"></i>
+              <p>26 Jul 2025</p>
+              <p>Today, December 10th, my family and I are honored to contribute $2,000,000 (US$2 million) to support our brothers and sisters, who have...                              </p>
+            </div>
+            <div class="img-txt"></div>
+            <div class="img-txt"></div>
+            <div class="img-txt"></div>
+            <div class="img-txt"></div>
+            <div class="img-txt"></div>
+            <div class="img-txt"></div>
+            <div class="img-txt"></div>
+            <div class="img-txt"></div>
+            <div class="img-txt"></div>
+          </div>
+        </section>
+    </main>
+<!-- Complete Section Main -->
+
+    <footer>
+        <section>
+          <h2>Contact Information</h2>
+          <p>Email:
+        </section>
+        <hr>
+        <section>
+          <p>© 2024 The Royal Group of Cambodia. All rights reserved.</p>
+        </section>
+    </footer>
 
 
-
-  <footer>
-      <div class="footer-content">
-        <tr>Career</tr>
-        <tr>Privacy Policy</tr>
-        <tr>Terms of Use</tr><br>
-
-
-         @2021 The Royal Group - All rights reserved
-         <a href="https://www.linkedin.com/company/royal-group-cambodia/">linkin</a>
-         <a href="https://www.facebook.com/royalgroupkh/">facebook</a>
-         <a href="https://instagram.com/royalgroupkh/">instagram</a>
-         <i class="fa-brands fa-facebook"></i>
-      </div>
-
-  </footer>
-
-
-
-
-
-</body>
+  </body>
 </html>

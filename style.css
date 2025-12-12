@@ -713,7 +713,7 @@ header {
 /* ===============complte section about Royal Group */
 /* Company Section */
 .company {
-  background-color: rgb(143, 56, 56);
+  background-color: rgb(255, 255, 255);
   padding: 60px 50px;
   text-align: center;
 
@@ -754,33 +754,110 @@ header {
 
 .news{
 
+
   background-color: white;
 }
 
 .news-title{
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 00px;
-  padding: 60px 50px;
+  justify-content: space-between;
+
+  padding: 60px 60px;
   width:100%;
   height:200px;
-  background-color: red;
+
 }
+
+
 
 .news-title .title-grid{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  background-color: green;
   width:300px;
-  height:90px;
+  height:150px;
+  font-size: 50px;
+  font-weight: bold;
+
+}
+.title-grid a{
+  text-decoration: none;
+  background: #ffd700;
+  color: black;
+  padding: 20px 55px;
+  font-size: 20px;
+
+  border-radius: 50px;
+  display: inline-block;
+
+  /* Smooth animation */
+  transition: all 0.3s ease;
+  margin-left:50px;
 }
 
-.news-img .img-txt img{
-  width:200px;
+
+
+.news .news-img {
+  margin:0px 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap:10px;
+  align-items: center;
+  justify-items: center;
+
 }
+
 .img-txt{
-  width:200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* center vertically */
+  align-items: center;       /* center horizontally */
+  text-align:start ;        /* center text */
+  padding: 15px;
+}
+
+
+.news-img .img-txt img{
+  width:300px;
+  height:300px;
+}
+
+
+
+/* Each Logo */
+.news-img .img-txt {
+  width: 340px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.news-img .img-txt:hover {
+  transform: scale(1.08);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.description{
+  width:300px;
+  padding:0px 12px;
+  height:96px;
+}
+
+.img-txt .date-news {
+  width:300px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+}
+
+.img-txt a{
+  text-decoration: none;
+}
+
+/* ==========================Complete Section News======================= */
+
+footer{
+  background-color: wheat;
 }

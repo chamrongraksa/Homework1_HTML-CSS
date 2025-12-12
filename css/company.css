@@ -1,0 +1,39 @@
+
+.company {
+  background-color: rgb(255, 255, 255);
+  padding: 60px 50px;
+  text-align: center;
+
+}
+
+.com-title p {
+  font-size: 32px;
+  font-weight: 700;
+  color: #002457;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.company .logo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+  border:2px solid yellow;
+   border-top-left-radius: 40px;   /* A */
+  border-bottom-right-radius: 40px;
+}
+
+/* Each Logo */
+.company .comp {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.company .comp:hover {
+  transform: scale(1.08);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}

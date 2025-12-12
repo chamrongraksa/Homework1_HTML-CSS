@@ -1,0 +1,58 @@
+
+
+footer {
+  background: #002457;
+  padding: 40px 0;
+  color: white;
+  font-family: sans-serif;
+}
+
+footer > div {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+
+footer section:first-child a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+footer section:first-child a:hover {
+  color: white;
+}
+
+footer hr {
+  border: 0;
+  height: 1px;
+  background: #444;
+  margin: 10px 0;
+}
+
+footer section:last-child p {
+  color: #bbb;
+  font-size: 14px;
+}
+
+footer section:last-child div i {
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+footer section:last-child div i:hover {
+  color: #00aaff;
+  transform: translateY(-3px);
+}

@@ -1,257 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>    Home | The Royal Group of Cambodia</title>
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/about-rgc.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/company.css">
-    <link rel="stylesheet" href="css/news.css">
-    <link rel="stylesheet" href="css/footer.css">
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily-Tracker</title>
     <script src="https://kit.fontawesome.com/2cb0c91dfc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/form.css">
 
-  </head>
-
-  <body>
+</head>
+<body>
     <header>
-        <div class="logo">
-          <a href="index.html"><img src="img/rgc.png" alt="The Royal Group of Cambodia Logo"></a>
-        </div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">☰</label>
-
-        <nav class="navbar">
-            <ul class="menu">
-                <li>
-                    <a href="index.html">Who We Are <i class="fa-solid fa-caret-down"></i></a>
-                    <ul>
-                        <li><a href="sub-page/about-rgc.html">About Royal Group</a></li>
-                        <li><a href="sub-page/chairman.html">The Chairman</a></li>
-                        <li><a href="sub-page/milestones.html">Milestones</a></li>
-                    </ul>
-                </li>
-                <li><a href="about.html">Business Portfolio</a></li>
-                <li><a href="services.html">Investors</a></li>
-                <li>
-                    <a href="contact.html">Content Hub <i class="fa-solid fa-caret-down"></i></a>
-                    <ul>
-                        <li><a href="history.html">About Royal Group</a></li>
-                        <li><a href="mission.html">The Chairman</a></li>
-                        <li><a href="leadership.html">Milestones</a></li>
-                    </ul>
-                </li>
-                <li><a href="blog.html">Contact Us</a></li>
-                <li id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></li>
-            </ul>
-        </nav>
-    </header>
-<!-- Complete Section Header -->
-    <main>
-        <section class="banner">
-            <img src="img/banner/image2.png" alt="">
-            <div class="explore">
-              <p id="explore">Explore Cambodia with The Royal Group</p>
-              <a href="sub-page/chairman.html" id="my-btn">Explore More <i class="fa-solid fa-arrow-right"></i> </i></a>
+        <aside>
+            <div class="logo">
+                <a href=""><img src="img/logo.png" alt="logo"></a>
             </div>
-        </section>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
 
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a data-type="home">Home</a></li>
+                    <li><a data-type="expense">Expense</a></li>
+                    <li><a data-type="activity">Activity</a></li>
+                    <li><a data-type="habit">Health</a></li>
+                    <li><a data-type="work">Work & Study</a></li>
+                    <li><a data-type="summary">Summary</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </header>
+
+    <main id="content">
         <section class="about-rgc">
-            <div class="vdo">
-                <iframe id="vdo"  src="https://www.youtube.com/embed/7IMbuynIHq4?si=y2Lcc0nawbeoRjpX" frameborder="0" allowfullscreen>about-rgc</iframe>
+            <div class="banner">
+                <img id="banner" src="img/banner.png" alt="">
             </div>
             <div class="about-text">
-                <p id="about-p">About the Royal Group of Companies</p>
-                <p id="describe-rgc">Cambodia’s strategic investment holding company, the Royal Group is recognised as the country’s most dynamic and diversified business conglomerate. Explore the overwhelming investment potential in the Mekong Region of Asia with us.</p>
-                <a href="sub-page/chairman.html" id="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i> </i></a>
+                <p id="about-p">Daily Tracking Application</p>
+                <p id="describe-rgc">Welcome to Daily Tracking management software that allow you to control everything in you dialy life in just one place! We offer lots of features for you in detail ranging from expenses to work and study. Finally summary part is provided to review the report easier!</p>
+
+                <button id="start-btn">
+                    <ul class="menu">
+                    <li>
+                        <a href="">Start <i class="fa-solid fa-caret-down"></i></a>
+                        <ul>
+                            <li><a data-type="expense">Expense</a></li>
+                            <li><a data-type="activity">Activity</a></li>
+                            <li><a data-type="habit">Health</a></li>
+                            <li><a data-type="work">Work & Study</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                </button>
+
             </div>
-        </section>
-
-
-        <section class="company">
-          <div class="com-title">
-            <p>Our Operating Companies</p>
-          </div>
-          <div class="logo">
-            <img class="comp" src="img/company/cellcard.png" alt="">
-            <img class="comp" src="img/company/cellcard.png" alt="">
-            <img class="comp" src="img/company/cellcard.png" alt="">
-            <img class="comp" src="img/company/cellcard.png" alt="">
-            <img class="comp" src="img/company/cellcard.png" alt="">
-            <img class="comp" src="img/company/cellcard.png" alt="">
-            <img class="comp" src="img/company/cellcard.png" alt="">
-            <img class="comp" src="img/company/cellcard.png" alt="">
-            <img class="comp" src="img/company/cellcard.png" alt="">
-
-          </div>
-        </section>
-
-
-
-        <section class="news">
-          <div class="news-title">
-            <div class="title-grid">
-              <p>Latest News</p>
-            </div>
-            <div class="title-grid">
-              <a href="sub-page/chairman.html">View More <i class="fa-solid fa-arrow-right"></i> </i></a>
-            </div>
-          </div>
-
-          <div class="news-img">
-            <div class="img-txt">
-                <a href="https://tinyurl.com/3sm5awsf">
-                    <img src="img/news/new2.png" alt="">
-                    <div class="date-news">
-                    <i class="fb fa-brands fa-facebook-f"></i>
-                    <p class="fb">26 Jul 2025</p>
-                    </div>
-                    <div class="description">
-                        <p>Today, December 10th, my family and I are honored to contribute $2,000,000 (US$2 million) to support our brothers and sisters, who have...                              </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="img-txt">
-                <a href="https://tinyurl.com/3sm5awsf">
-                    <img src="img/news/new2.png" alt="">
-                    <div class="date-news">
-                    <i class="fb fa-brands fa-facebook-f"></i>
-                    <p class="fb">26 Jul 2025</p>
-                    </div>
-                    <div class="description">
-                        <p>Today, December 10th, my family and I are honored to contribute $2,000,000 (US$2 million) to support our brothers and sisters, who have...                              </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="img-txt">
-                <a href="https://tinyurl.com/3sm5awsf">
-                    <img src="img/news/new2.png" alt="">
-                    <div class="date-news">
-                    <i class="fb fa-brands fa-facebook-f"></i>
-                    <p class="fb">26 Jul 2025</p>
-                    </div>
-                    <div class="description">
-                        <p>Today, December 10th, my family and I are honored to contribute $2,000,000 (US$2 million) to support our brothers and sisters, who have...                              </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="img-txt">
-                <a href="https://tinyurl.com/3sm5awsf">
-                    <img src="img/news/new2.png" alt="">
-                    <div class="date-news">
-                    <i class="fb fa-brands fa-facebook-f"></i>
-                    <p class="fb">26 Jul 2025</p>
-                    </div>
-                    <div class="description">
-                        <p>Today, December 10th, my family and I are honored to contribute $2,000,000 (US$2 million) to support our brothers and sisters, who have...                              </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="img-txt">
-                <a href="https://tinyurl.com/3sm5awsf">
-                    <img src="img/news/new2.png" alt="">
-                    <div class="date-news">
-                    <i class="fb fa-brands fa-facebook-f"></i>
-                    <p class="fb">26 Jul 2025</p>
-                    </div>
-                    <div class="description">
-                        <p>Today, December 10th, my family and I are honored to contribute $2,000,000 (US$2 million) to support our brothers and sisters, who have...                              </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="img-txt">
-                <a href="https://tinyurl.com/3sm5awsf">
-                    <img src="img/news/new2.png" alt="">
-                    <div class="date-news">
-                    <i class="fb fa-brands fa-facebook-f"></i>
-                    <p class="fb">26 Jul 2025</p>
-                    </div>
-                    <div class="description">
-                        <p>Today, December 10th, my family and I are honored to contribute $2,000,000 (US$2 million) to support our brothers and sisters, who have...                              </p>
-                    </div>
-                </a>
-            </div>
-
-
-            <div class="img-txt">
-                <a href="https://tinyurl.com/3sm5awsf">
-                    <img src="img/news/new2.png" alt="">
-                    <div class="date-news">
-                    <i class="fb fa-brands fa-facebook-f"></i>
-                    <p class="fb">26 Jul 2025</p>
-                    </div>
-                    <div class="description">
-                        <p>Today, December 10th, my family and I are honored to contribute $2,000,000 (US$2 million) to support our brothers and sisters, who have...                              </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="img-txt">
-                <a href="https://tinyurl.com/3sm5awsf">
-                    <img src="img/news/new2.png" alt="">
-                    <div class="date-news">
-                    <i class="fb fa-brands fa-facebook-f"></i>
-                    <p class="fb">26 Jul 2025</p>
-                    </div>
-                    <div class="description">
-                        <p>Today, December 10th, my family and I are honored to contribute $2,000,000 (US$2 million) to support our brothers and sisters, who have...                              </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="img-txt">
-                <a href="https://tinyurl.com/3sm5awsf">
-                    <img src="img/news/new2.png" alt="">
-                    <div class="date-news">
-                    <i class="fb fa-brands fa-facebook-f"></i>
-                    <p class="fb">26 Jul 2025</p>
-                    </div>
-                    <div class="description">
-                        <p>Today, December 10th, my family and I are honored to contribute $2,000,000 (US$2 million) to support our brothers and sisters, who have...                              </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="img-txt">
-                <a href="https://tinyurl.com/3sm5awsf">
-                    <img src="img/news/new2.png" alt="">
-                    <div class="date-news">
-                    <i class="fb fa-brands fa-facebook-f"></i>
-                    <p class="fb">26 Jul 2025</p>
-                    </div>
-                    <div class="description">
-                        <p>Today, December 10th, my family and I are honored to contribute $2,000,000 (US$2 million) to support our brothers and sisters, who have...                              </p>
-                    </div>
-                </a>
-            </div>
-          </div>
         </section>
     </main>
-<!-- Complete Section Main -->
 
     <footer>
         <div>
             <section>
-                <a href="">Caree</a>
+                <a href="">About Developer</a>
                 <a href="">Privacy Policy</a>
-                <a href="">Term of Use</a>
+                <a href="">How To Use</a>
             </section>
             <hr>
             <section>
-                <p>© 2024 The Royal Group of Cambodia -All rights reserved.</p>
+                <p>© 2025 Chamrong Raksa-All rights reserved.</p>
                 <div>
                     <i class="fa-brands fa-linkedin"></i>
                     <i class="fa-brands fa-facebook-f"></i>
@@ -260,7 +79,8 @@
             </section>
         </div>
     </footer>
+    <script src="js/app.js"></script>
 
 
-  </body>
+</body>
 </html>

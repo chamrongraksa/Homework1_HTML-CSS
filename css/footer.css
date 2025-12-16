@@ -1,9 +1,16 @@
 
 
 footer {
-  background: #002457;
-  padding: 40px 0;
-  color: white;
+  background-image: linear-gradient(
+            to right,
+            #000000,
+            black,
+            rgb(18, 30, 86),
+            #000000,
+            black
+      );
+  padding: 20px 0;
+  color: #63ffd8;
   font-family: sans-serif;
 }
 
@@ -46,7 +53,7 @@ footer section:last-child p {
 }
 
 footer section:last-child div i {
-  font-size: 20px;
+  font-size: 25px;
   margin-left: 15px;
   cursor: pointer;
   transition: 0.3s;

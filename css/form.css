@@ -1,0 +1,114 @@
+
+form {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+    animation: fadeIn 0.3s ease;
+}
+
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0a5adf;
+    font-size: 22px;
+}
+
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+form input:focus {
+    border-color: #0a5adf;
+    box-shadow: 0 0 0 3px rgba(10, 90, 223, 0.15);
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #0a5adf;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+form button:hover {
+    background: #084bb8;
+    transform: translateY(-2px);
+}
+
+/* Button active */
+form button:active {
+    transform: translateY(0);
+}
+
+#content {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+.summary {
+    padding: 24px;
+    max-width: 900px;
+}
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.card {
+    padding: 16px;
+    border-radius: 10px;
+    background: #f4f6f8;
+    text-align: center;
+    font-size: 14px;
+}
+
+.card strong {
+    font-size: 22px;
+}
+
+.card.highlight {
+    background: #e3f2fd;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.history-table th,
+.history-table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.history-table th {
+    text-align: left;
+    color: #666;
+}
+
+.history-table tr:hover {
+    background: #f9f9f9;
+}
